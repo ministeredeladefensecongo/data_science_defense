@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modernisation des Armées – République du Congo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+
+    .section-modernisation {
+      max-width: 1300px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .mod-title {
+      font-size: 2.6rem;
+      color: #003366;
+      text-align: center;
+      margin-bottom: 30px;
+      border-left: 6px solid #C8B560;
+      padding-left: 12px;
+    }
+
+    .mod-intro {
+      text-align: justify;
+      font-size: 1.25rem;
+      max-width: 950px;
+      margin: 0 auto 50px;
+      line-height: 1.8;
+    }
+
+    .mod-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .mod-card {
+      background: #f5f8fa;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+      width: 380px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .mod-card:hover {
+      transform: translateY(-10px) scale(1.04);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .mod-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .mod-content {
+      padding: 24px;
+    }
+
+    .mod-content h3 {
+      color: #004080;
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+    }
+
+    .mod-content p {
+      font-size: 1rem;
+      text-align: justify;
+      color: #333;
+    }
+
+    .btn-retour {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #C8B560;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      text-decoration: none;
+      z-index: 999;
+    }
+
+    .btn-retour:hover {
+      transform: scale(1.05);
+      background: #bda946;
+    }
+
+    @media(max-width: 768px) {
+      .mod-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .mod-card {
+        width: 90%;
+      }
+
+      .mod-title {
+        font-size: 2rem;
+      }
+
+      .mod-intro {
+        font-size: 1.05rem;
+      }
+
+      .btn-retour {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="btn-retour">← Accueil</a>
+
+  <section class="section-modernisation">
+    <h2 class="mod-title"> Modernisation des Armées – République du Congo</h2>
+    <p class="mod-intro">
+      Face aux enjeux géopolitiques, à la cybermenace et aux conflits asymétriques, le Congo renforce ses capacités militaires avec une vision claire : bâtir une armée professionnelle, autonome et tournée vers l’avenir. Cette modernisation est à la fois technique, humaine et stratégique.
+    </p>
+
+    <div class="mod-cards">
+      <div class="mod-card">
+        <img src="https://www.aci.cg/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-13-at-16.41.09.jpeg" />
+        <div class="mod-content">
+          <h3> Formation de haut niveau</h3>
+          <p>
+            Les nouvelles générations de soldats bénéficient de programmes de formation avancés : tir de précision, cyberdéfense, tactiques d’intervention rapide et gestion de crise. Le professionnalisme est désormais au cœur de la doctrine militaire.
+          </p>
+        </div>
+      </div>
+
+      <div class="mod-card">
+        <img src="https://topwar.ru/uploads/posts/2025-04/cf6657dc78_9_-ural-375.webp" />
+        <div class="mod-content">
+          <h3> Équipements de nouvelle génération</h3>
+          <p>
+            Les FAC s’équipent de véhicules blindés légers, drones d’observation, gilets balistiques renforcés et systèmes de communication cryptés pour plus de mobilité, de précision et de sécurité sur le terrain.
+          </p>
+        </div>
+      </div>
+
+      <div class="mod-card">
+        <img src="https://www.contretemps.eu/wp-content/uploads/industrie-armes-france.jpg" />
+        <div class="mod-content">
+          <h3> Souveraineté industrielle</h3>
+          <p>
+            Un partenariat public-privé entre l’État congolais et Afritex permettra la construction d’une usine à Mfilou-Ngamaba pour produire localement des équipements militaires (uniformes, bottes, sacs),réduisant la dépendance extérieure,créant des emplois et renforçant les capacités logistiques nationales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications - Ministère de la Défense</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #009e49, #ffcd00, #d62828);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 1.3em;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .publication {
+      background: white;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .pub-img {
+      width: 100%;
+      max-width: 300px;
+      object-fit: cover;
+    }
+
+    .text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .text h3 {
+      color: #d62828;
+      margin-top: 0;
+    }
+
+    .extra-text {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .btn-retour {
+      background-color: #ffcd00;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .btn-retour:hover {
+      transform: scale(1.05);
+      background-color: #ffe44d;
+    }
+
+    @media (max-width: 768px) {
+      .publication {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pub-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .text {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Coat_of_arms_of_the_Republic_of_the_Congo.svg" alt="Logo République du Congo" class="logo">
+    <h1>Ministère de la Défense</h1>
+    <h2>Publications Officielles</h2>
+  </header>
+
+  <section class="content">
+
+    <article class="publication">
+      <img src="https://arpce.cg/storage/app/public/41Btlv0HVgw0sxuyeGehqRv9EZmr61Ua2IjvQUT9.jpeg" alt="Livre Blanc Défense" class="pub-img">
+      <div class="text">
+        <h3>Livre Blanc de la Défense 2024</h3>
+        <p>
+          Document stratégique de référence présentant les priorités de la politique de défense du Congo : 
+          modernisation des forces, dissuasion, cyberdéfense et partenariats internationaux.
+        </p>
+        <p class="extra-text">
+          Ce document a été élaboré par un comité interministériel en consultation avec les experts de la sécurité 
+          nationale et les partenaires internationaux. Il trace une feuille de route sur 10 ans.
+        </p>
+      </div>
+    </article>
+
+    <article class="publication">
+      <img src="https://www.primature.gouv.cg/wp-content/uploads/2025/07/CyberDrill-2025-le-Congo-en-premiere-ligne-pour-la-cybersecurite-en-Afrique-centrale-1-1024x605.jpeg" alt="Bulletin des Forces Armées" class="pub-img">
+      <div class="text">
+        <h3>Bulletin des Forces Armées - Juin 2025</h3>
+        <p>
+          Ce bulletin couvre les opérations militaires, les exercices conjoints, les formations et les actions
+          humanitaires des forces armées sur le territoire national.
+        </p>
+        <p class="extra-text">
+          Il met en lumière les missions accomplies par les différentes unités, les partenariats bilatéraux 
+          actifs, et les actions de soutien à la population en situation d’urgence.
+        </p>
+      </div>
+    </article>
+
+    <article class="publication">
+      <img src="https://www.primature.gouv.cg/wp-content/uploads/2025/07/CyberDrill-2025-le-Congo-en-premiere-ligne-pour-la-cybersecurite-en-Afrique-centrale-2.jpeg" alt="Cyber Défense" class="pub-img">
+      <div class="text">
+        <h3>Rapport sur la Cyberdéfense 2025</h3>
+        <p>
+          Ce rapport détaille la stratégie nationale de cybersécurité, les menaces détectées et les mesures 
+          mises en place pour renforcer la résilience des systèmes d’information critiques.
+        </p>
+        <p class="extra-text">
+          Il contient également une évaluation des capacités techniques des centres de surveillance 
+          ainsi que des recommandations issues des audits réalisés par des organismes indépendants.
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <footer>
+    <a href="index.html" class="btn-retour">← Retour à la première page</a>
+  </footer>
+
+</body>
+</html>

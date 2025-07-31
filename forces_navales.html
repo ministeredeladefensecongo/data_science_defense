@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Force Navale - Ministère des Armées</title>
+  <style>
+    :root {
+      --primary: #00303f;
+      --accent: #4eb8c0;
+      --text: #222;
+      --bg: #e8f7fa;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      background-color: var(--accent);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    header a:hover {
+      background-color: #349aa2;
+      transform: translateY(-2px);
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    main h2 {
+      color: var(--primary);
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      background-color: var(--white);
+      padding: 25px;
+      border-left: 6px solid var(--accent);
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    section {
+      background-color: var(--white);
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    section h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Force Navale</h1>
+    <a href="./index.html">&#8592; Retour à l'accueil</a>
+  </header>
+
+  <main>
+    <h2>Les Forces Navales Congolaises</h2>
+    <div class="intro">
+      La Force Navale Congolaise protège nos eaux territoriales, nos voies navigables stratégiques et nos frontières maritimes. Elle joue un rôle central dans la lutte contre la piraterie, le trafic illicite, la surveillance côtière et la présence militaire en mer.
+    </div>
+
+    <div class="gallery">
+      <img src="https://www.sandiegouniontribune.com/wp-content/uploads/migration/2011/12/22/00000169-0cec-dbbe-a16f-4eec67c80000.jpg?w=1800&resize=1800,1800" alt="Navire militaire">
+      <img src="https://www.deagel.com/library/md/2010/m02010032900006.jpg" alt="Patrouille navale">
+      <img src="https://8a17c282.delivery.rocketcdn.me/wp-content/uploads/2019/09/Un-E2-C-Hawkeye-pret-a-etre-catapulter-sur-le-pont-du-Porte-avions-nucleaire-francais-Charles-de-Gaulle.jpg" alt="Soldats à bord">
+    </div>
+
+    <section>
+      <h3>Flotte et Bâtiments</h3>
+      <p>
+        La Force Navale possède des navires de patrouille rapide, des vedettes blindées, des frégates légères et des embarcations pour opérations fluviales. Ces unités assurent la présence continue sur les eaux congolaises.
+      </p>
+    </section>
+
+    <section>
+      <h3>Surveillance et Coopération</h3>
+      <p>
+        Les opérations de surveillance maritime sont menées en collaboration avec des centres régionaux et internationaux. L'intégration de radars côtiers et de drones marins permet une détection précoce des menaces.
+      </p>
+    </section>
+
+    <section>
+      <h3>Entraînement et Engagement</h3>
+      <p>
+        Les marins sont formés aux missions de débarquement, de sauvetage et de combat naval. En 2025, plusieurs opérations de récupération de zones portuaires ont été menées avec succès dans les régions sud et est du pays.
+      </p>
+    </section>
+  </main>
+
+    <footer style="background-color: transparent; color: #333333; text-align: center; padding: 20px; font-size: 0.95rem; font-family: 'Roboto', sans-serif;">
+  © 2025 Ministère des Armées - Force Navale Congolaise 
+</footer>
+</body>
+</html>

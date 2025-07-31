@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Force Aérienne - Ministère des Armées</title>
+  <style>
+    :root {
+      --primary: #1c2c5b;
+      --accent: #4a80d4;
+      --text: #222;
+      --bg: #f0f4fc;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      background-color: var(--accent);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    header a:hover {
+      background-color: #3569bb;
+      transform: translateY(-2px);
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    main h2 {
+      color: var(--primary);
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      background-color: var(--white);
+      padding: 25px;
+      border-left: 6px solid var(--accent);
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    section {
+      background-color: var(--white);
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    section h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Force Aérienne</h1>
+    <a href="./index.html"> &#8592; Retour à l'accueil</a>
+  </header>
+
+  <main>
+    <h2>Les Forces Aériennes Congolaises</h2>
+    <div class="intro">
+      La Force Aérienne joue un rôle essentiel dans la protection de l'espace aérien national, les missions de reconnaissance, le soutien logistique et les opérations de frappe précise. Sa capacité de réaction rapide et sa modernisation continue sont des piliers stratégiques pour la défense du pays.
+    </div>
+
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Mirage_IV_pic2_at_Kleine_Brogel_Air_Base,_Belgium_2005.JPG" alt="Avion de chasse en vol">
+      <img src="https://remeng.rosselcdn.net/sites/default/files/dpistyles_v2/rem_16_9_1124w/2023/04/22/node_477833/13158703/public/2023/04/22/B9734094015Z.1_20230422210617_000%2BGGPMKUUBF.1-0.jpg?itok=bFbqJFRJ1682336135" alt="Hélicoptère militaire">
+      <img src="https://media.lesechos.com/api/v1/images/view/684e7a0a7c4b6c920f0e2f30/1280x720/0150344633389-web-tete.jpg" alt="Pilotes en mission">
+    </div>
+
+    <section>
+      <h3>Unités et Flottes</h3>
+      <p>
+        Les Forces Aériennes disposent de plusieurs escadrons : chasse, transport, hélicoptères, drones et surveillance. Chaque unité opère avec un haut niveau de compétence technique et une coordination rigoureuse avec les autres forces armées.
+      </p>
+    </section>
+
+    <section>
+      <h3>Technologie et Innovation</h3>
+      <p>
+        Les aéronefs sont équipés de systèmes de navigation avancés, radars embarqués, contre-mesures électroniques et dispositifs de communication cryptée. L'entrainement des pilotes inclut la simulation virtuelle et la formation internationale.
+      </p>
+    </section>
+
+    <section>
+      <h3>Missions Stratégiques</h3>
+      <p>
+        En 2025, les missions ont inclus la surveillance des zones frontalières, le soutien aux troupes terrestres dans l'Est du pays et des opérations d'évacuation médicale en milieu hostile. La capacité d'intervention rapide renforce la dissuasion aérienne nationale.
+      </p>
+    </section>
+  </main>
+
+   <footer style="background-color: transparent; color: #333333; text-align: center; padding: 20px; font-size: 0.95rem; font-family: 'Roboto', sans-serif;">
+  © 2025 Ministère des Armées - Force Aerienne Congolaise 
+</footer>
+</body>
+</html>

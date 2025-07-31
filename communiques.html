@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Communiqués - Ministère de la Défense du Congo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(to right, #007a3d, #ffcd00, #d62828);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .container {
+      padding: 40px 20px;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      color: #007a3d;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      color: #333;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .retour {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .retour a {
+      background: #d62828;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .retour a:hover {
+      background: #b21f1f;
+    }
+
+    footer {
+      background-color: #003300;
+      color: #ddd;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ministère de la Défense Nationale</h1>
+    <p>Communiqués Officiels – République du Congo</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://lesechos-congobrazza.com/images/2024/A-A-A-A-A-A-A-A-A-A-A-FAC-TENUES-3.jpg" alt="Sécurité nord">
+      <div class="card-content">
+        <h2>Sécurisation des frontières nord</h2>
+        <p>Face aux tensions croissantes dans le nord du pays, les Forces Armées Congolaises ont été déployées stratégiquement pour restaurer l’ordre et garantir la sécurité des populations locales.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cg.usembassy.gov/wp-content/uploads/sites/119/2024/10/Accreditation-family-photo-01.png" alt="Coopération militaire">
+      <div class="card-content">
+        <h2>Renforcement de la coopération militaire</h2>
+        <p>Le Congo a signé un nouvel accord de défense avec ses voisins afin d’unir les efforts contre les menaces transfrontalières. Des exercices conjoints auront lieu dans les mois à venir.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.unicef.org/congo/sites/unicef.org.congo/files/styles/press_release_feature/public/auto.jpg.webp?itok=7fdrkQ_r" alt="Intervention humanitaire">
+      <div class="card-content">
+        <h2>Intervention humanitaire à Makoua</h2>
+        <p>Après des inondations majeures, l’armée congolaise a assuré la distribution de vivres, la relocalisation de familles et la sécurisation des infrastructures dans la région de Makoua.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="retour">
+    <a href="./index.html">⬅ Retour à la page principale</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Ministère de la Défense Nationale du Congo – Tous droits réservés.
+  </footer>
+
+</body>
+</html>

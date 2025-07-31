@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gendarmerie Nationale du Congo-Brazzaville</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+    html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 0;
+}
+
+    :root {
+      --blue-dark: #002147;
+      --blue-light: #0072ce;
+      --white: #ffffff;
+      --gray: #f0f2f5;
+      --text-dark: #1a1a1a;
+      --gold: #cfa300;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--gray);
+      color: var(--text-dark);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--blue-dark);
+      color: var(--white);
+      padding: 2em 1em;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.3em;
+    }
+
+    header img {
+      width: 70px;
+    }
+
+    nav {
+      background-color: var(--blue-light);
+      padding: 1em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: var(--white);
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Parade_militaire_du_14_juillet_2017_%28Paris%29_%2836774135475%29.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      background-color: rgba(0, 33, 71, 0.6);
+      padding: 0.5em 1em;
+      border-radius: 10px;
+    }
+
+    main {
+      padding: 3em 2em;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      background-color: var(--white);
+      padding: 2em;
+      margin-bottom: 3em;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      opacity: 0.97;
+    }
+
+    section h2 {
+      color: var(--blue-dark);
+      margin-bottom: 1em;
+    }
+
+    .content-blocks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+
+    .content-block {
+      flex: 1 1 30%;
+      background-color: #fdfdfd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .content-block:hover {
+      transform: scale(1.03);
+    }
+
+    .content-block img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .content-block p {
+      padding: 1em;
+    }
+
+    .btn-retour {
+      display: inline-block;
+      padding: 0.8em 1.5em;
+      background-color: var(--blue-light);
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 2em;
+      transition: background 0.3s;
+    }
+
+    .btn-retour:hover {
+      background-color: var(--blue-dark);
+    }
+
+    footer {
+      background-color: var(--blue-dark);
+      color: var(--white);
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Coat_of_arms_of_the_Republic_of_the_Congo.svg" alt="Drapeau du Congo">
+    <h1>Gendarmerie Nationale du Congo-Brazzaville</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#activites">Activités</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h2>Protection, Sécurité, Loyauté</h2>
+  </div>
+
+  <main>
+    <section id="mission">
+      <h2>Notre Mission</h2>
+      <div class="content-blocks">
+        <div class="content-block">
+          <img src="https://www.gendarmerie.interieur.gouv.fr/var/site/storage/images/_aliases/dsfr_md/3/7/5/5/365573-1-fre-FR/299c3e0092b9-3-Visite-delegation-congolaise-GND_Brice_LAPOINTE-17.jpg" alt="Gendarme">
+          <p>Assurer la sécurité des citoyens et faire respecter les lois.</p>
+        </div>
+        <div class="content-block">
+          <img src="https://www.force-publique.net/sources/Annuaire/Annuaire-web-resources/image/Intervention-congo.jpg" alt="Cérémonie">
+          <p>Protéger les institutions de la République avec loyauté.</p>
+        </div>
+        <div class="content-block">
+          <img src="https://lesechos-congobrazza.com/images/ARMES.jpg" alt="Patrouille">
+          <p>Intervenir rapidement en cas de crise ou de catastrophe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="activites">
+      <h2>Nos Activités</h2>
+      <ul>
+        <li>Maintien de l’ordre public et sécurité des citoyens</li>
+        <li>Intervention rapide en cas d’urgence ou de catastrophe</li>
+        <li>Surveillance routière et lutte contre la criminalité</li>
+        <li>Protection des hautes personnalités et institutions</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Téléphone : 117 </p>
+      <p>Adresse : Brazzaville, République du Congo</p>
+      <a href="./index.html" class="btn-retour">⬆ Retour à l'accueil</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gendarmerie Nationale du Congo-Brazzaville | Conçu avec inspiration des institutions internationales</p>
+  </footer>
+</body>
+</html>

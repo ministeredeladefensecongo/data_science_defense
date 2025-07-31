@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Histoire Militaire - République du Congo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap');
+
+    :root {
+      --vert-congo: #2B4C3F;
+      --or-congo: #C8B560;
+      --rouge-congo: #D72638;
+      --beige: #FAF9F6;
+      --texte: #222;
+      --ombre: rgba(0,0,0,0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--beige);
+      color: var(--texte);
+    }
+
+    .retour {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: var(--rouge-congo);
+      color: white;
+      padding: 10px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px var(--ombre);
+      transition: 0.3s ease;
+      z-index: 999;
+    }
+
+    .retour:hover {
+      background-color: var(--vert-congo);
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(to right, var(--vert-congo), var(--or-congo));
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      background-color: white;
+      border-left: 8px solid var(--or-congo);
+      padding: 30px 25px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 15px var(--ombre);
+      transition: 0.3s;
+    }
+
+    .section:hover {
+      transform: translateY(-4px);
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--vert-congo);
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin: 50px 20px 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .retour {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="retour">← Accueil</a>
+
+  <header>
+    <h1>Histoire Militaire du Congo</h1>
+    <p>Des racines historiques aux ambitions modernes</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Les origines après l'indépendance (1960–1970)</h2>
+      <p>
+        À l'indépendance en 1960, la République du Congo hérite d'une armée naissante, encore structurée par les cadres coloniaux. Rapidement, l'État engage une réforme pour affirmer une défense souveraine. Cette période est marquée par une volonté de créer une armée nationale capable d'assurer l'ordre intérieur et la stabilité politique, dans un contexte de décolonisation encore instable.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Réorganisations et influences étrangères (1970–1990)</h2>
+      <p>
+        Les années 70 et 80 voient la structuration de l’armée congolaise. Influencée par les pays du bloc de l’Est, elle adopte des doctrines inspirées de l’URSS et de Cuba. Plusieurs académies militaires sont créées, formant des officiers locaux. Des unités spécialisées apparaissent : génie militaire, marine fluviale, protection présidentielle...
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Crises internes et guerre civile (1990–1999)</h2>
+      <p>
+        À partir des années 1990, l'armée est confrontée à une fragmentation due aux tensions ethniques et politiques. Des conflits internes éclatent, notamment en 1997, entraînant une guerre civile. Les forces armées se retrouvent divisées, certaines soutenant des factions politiques. Cette décennie est marquée par des blessures profondes dans l’institution militaire.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Reconstruction et professionnalisation (2000–2020)</h2>
+      <p>
+        Après le retour au calme, l’armée congolaise entre dans une phase de reconstruction. Le gouvernement met en œuvre des réformes pour professionnaliser les effectifs, améliorer la discipline, moderniser les équipements et favoriser l’intégration des anciens combattants. Des partenariats internationaux avec la France, l’Angola, la Chine et la Russie soutiennent cette mutation.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Défis actuels et avenir (2020 – aujourd’hui)</h2>
+      <p>
+        Aujourd’hui, l’armée congolaise se positionne comme une force républicaine, engagée dans la lutte contre le terrorisme, la surveillance des frontières et la protection des ressources naturelles. Des efforts sont en cours pour intégrer davantage les femmes, investir dans le numérique, la cybersécurité, les drones, et favoriser une culture militaire fondée sur les droits humains et le professionnalisme.
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2025 Ministère de la Défense - République du Congo. Tous droits réservés.
+    </footer>
+  </div>
+
+</body>
+</html>

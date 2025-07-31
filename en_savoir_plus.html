@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>En savoir plus - Ministère de la Défense</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    :root {
+      --bleu-france: #0055A4;
+      --blanc-france: #FFFFFF;
+      --rouge-france: #EF4135;
+      --gris-fonce: #333333;
+      --gris-clair: #F5F5F5;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: var(--gris-clair);
+      color: var(--gris-fonce);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--bleu-france), var(--rouge-france));
+      color: var(--blanc-france);
+      padding: 2rem 2rem 2rem 2rem;
+      border-bottom: 4px solid gold;
+      position: relative;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .btn-retour {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: transparent;
+      border: 2px solid var(--blanc-france);
+      color: var(--blanc-france);
+      padding: 6px 12px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-retour:hover {
+      background-color: var(--blanc-france);
+      color: var(--bleu-france);
+      transform: scale(1.05);
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: var(--bleu-france);
+      border-left: 5px solid var(--rouge-france);
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    .content-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      background-color: var(--blanc-france);
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: 1s all;
+    }
+
+    .content-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .content-block:hover {
+      transform: scale(1.025);
+    }
+
+    .content-text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .content-text h3 {
+      color: var(--bleu-france);
+      margin-top: 0;
+    }
+
+    .content-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .content-img {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .content-img img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--rouge-france);
+      color: var(--blanc-france);
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--bleu-france);
+    }
+
+    footer {
+      background-color: var(--gris-fonce);
+      color: var(--blanc-france);
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .content-block {
+        flex-direction: column !important;
+      }
+
+      .btn-retour {
+        top: 10px;
+        left: 10px;
+        padding: 8px 14px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="./index.html" class="btn-retour">← Accueil</a>
+    <h1>En savoir plus sur la Défense Nationale</h1>
+  </header>
+
+  <section class="section">
+    <h2>Notre Mission</h2>
+
+    <div class="content-block">
+      <div class="content-text">
+        <h3>Préserver la souveraineté</h3>
+        <p>
+          Le sol congolais n’est pas seulement une terre ; c’est l’âme d’un peuple, l’héritage de nos ancêtres et la promesse faite à nos enfants.
+Préserver la souveraineté du Congo, c’est protéger ce qui nous unit, ce qui nous élève, et ce qui nous définit.
+Chaque forêt, chaque rivière, chaque pierre porte le témoignage de luttes passées et d’espérances futures.
+La paix que nous défendons n’est pas une faiblesse, c’est la force de ceux qui refusent de plier.
+Aux frontières comme au cœur des villes, notre engagement est total :
+Le Congo restera libre, uni et debout. <br> <strong> Préserver la souveraineté, c’est protéger l’âme du Congo.</strong>
+
+        </p>
+      </div>
+      <div class="content-img">
+        <img src="https://www.adiac-congo.com/sites/default/files/img-20230815-wa0082.jpg" alt="Soldats en mission sur le terrain" />
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="content-text">
+        <h3>Modernisation et Technologie</h3>
+        <p>
+
+          Le monde avance, et le Congo avance avec lui.
+Dans chaque circuit, chaque satellite, chaque ligne de code, se construit une nouvelle forme de puissance.
+Nos armes ne sont plus seulement forgées dans l’acier, mais aussi dans la science, la cybersécurité, les drones, les systèmes intelligents.
+La modernité n’efface pas notre histoire ; elle la prolonge avec fierté.
+Former, innover, protéger : voilà notre mission.
+Car un pays qui maîtrise la technologie, maîtrise son avenir. <br> <strong>La technologie est notre nouvelle défense, et l’innovation, notre force silencieuse.</strong>
+
+        </p>
+      </div>
+      <div class="content-img">
+        <img src="https://www.nato.int/nato_static_fl2014/assets/pictures/images_mfu/2022/2/stock/220223-sto.jpg" alt="Technologies militaires modernes" />
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="content-text">
+        <h3>Un engagement pour la jeunesse</h3>
+        <p>
+Jeunesse du Congo, vous n’êtes pas seulement l’avenir — vous êtes déjà la lumière qui éclaire notre présent.
+Dans vos rêves naissent les solutions de demain, dans vos bras reposent les forces d’un pays en marche.
+Nous croyons en vous. Nous vous protégeons.
+Mais surtout, nous vous préparons à défendre ce que vous êtes : l’honneur, la paix, la liberté.
+Éduquez-vous. Formez-vous. Relevez-vous.
+Le destin du Congo s’écrira avec vos idées, vos talents, votre courage.
+Ne laissez personne voler votre avenir : vous êtes la promesse que le Congo ne tombera jamais. <br> <strong>La jeunesse est l’armure du Congo et la clef de son éternité.</strong>
+
+        </p>
+      </div>
+      <div class="content-img">
+        <img src="https://www.unicef.org/congo/sites/unicef.org.congo/files/styles/open_graph_image/public/179A0688.JPG.jpeg?itok=NDZ2PXmz" alt="Recrues militaires en entraînement" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ministère de la Défense - République du Congo. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

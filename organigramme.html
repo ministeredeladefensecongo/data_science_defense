@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Organigramme - République du Congo</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    position: relative;
+  }
+
+  .back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    background: #C8B560;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.2s;
+  }
+
+  .back-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .back-btn svg {
+    fill: #fff;
+    width: 22px;
+    height: 22px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 60px 20px 10px;
+  }
+
+  .header h1 {
+    margin-bottom: 5px;
+    color: #2B4C3F;
+    font-size: 2.4rem;
+  }
+
+  .header p {
+    color: #555;
+    font-size: 1.1rem;
+  }
+
+  .org-chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .org-card {
+    background: #fff;
+    width: 260px;
+    padding: 25px 20px;
+    border-left: 6px solid #0055A4;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .org-card:hover {
+    transform: scale(1.03);
+  }
+
+  .org-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .org-card h3 {
+    margin-bottom: 10px;
+    color: #0055A4;
+    font-size: 1.2rem;
+  }
+
+  .org-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .org-card {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+
+<a href="index.html" class="back-btn" aria-label="Retour">
+  <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+</a>
+
+
+
+<div class="header">
+  <h1>Organigramme Officiel</h1>
+  <p>Gouvernement & État – République du Congo, 2025</p>
+</div>
+
+<div class="org-chart">
+  <div class="org-card">
+    <img src="https://img.lemde.fr/2022/09/09/0/0/4968/3312/1440/960/60/0/00212f8_1662735611396-000-9qt93w.jpg" alt="Président Denis Sassou Nguesso">
+    <h3>Denis Sassou Nguesso</h3>
+    <p>Président de la République du Congo depuis 1997<br><em>Chef de l’État</em></p>
+  </div>
+
+  <div class="org-card">
+    <img src="https://gouvernement.cg/wp-content/uploads/2024/01/imageresize.jpg" alt="Premier ministre Anatole Collinet Makosso">
+    <h3>Anatole Collinet Makosso</h3>
+    <p>Premier ministre – Chef du Gouvernement<br><em>Coordination de l’exécutif</em></p>
+  </div>
+
+  <div class="org-card">
+    <img src="https://www.lhorizonafricain.com/wp-content/uploads/2024/05/Le-ministre-dEtat-Firmin-Ayessa.webp" alt="Vice‑PM Firmin Ayessa">
+    <h3>Firmin Ayessa</h3>
+    <p>Vice‑Premier ministre, Fonction publique<br><em>Réforme administrative</em></p>
+  </div>
+
+  <div class="org-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsqf61-cuoFsmhs5gK0fypdRJq1B5hfRl8-w&s" alt="Ministre de la Défense Charles Richard Mondjo">
+    <h3>Charles R. Mondjo</h3>
+    <p>Ministre de la Défense nationale<br><em>Sécurité et armée</em></p>
+  </div> 
+   <div class="org-card">
+    <img src="https://www.adiac-congo.com/sites/default/files/img-20221231-wa0056.jpg">
+    <h3>Guy Blanchard Okoï</h3>
+    <p>Général de division <br><em>Chef d'Etat Major</em></p>
+  </div>
+</div>
+
+</body>
+</html>

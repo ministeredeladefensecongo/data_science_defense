@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministère de la Défense - République du Congo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    :root {
+      --bleu-france: #0055A4;
+      --blanc-france: #FFFFFF;
+      --rouge-france: #EF4135;
+      --gris-fonce: #333333;
+      --gris-clair: #F5F5F5;
+      --or: gold;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--gris-clair);
+      color: var(--gris-fonce);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(to right, var(--bleu-france), var(--rouge-france));
+      color: var(--blanc-france);
+      padding: 1rem 0;
+      border-bottom: 5px solid var(--or);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    .logo-text h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .logo-text p {
+      margin: 4px 0 0;
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    .logo-text .devise {
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: var(--or);
+      margin-top: 5px;
+    }
+
+    .nav {
+      background-color: var(--bleu-france);
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-item a {
+      display: block;
+      padding: 15px 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .nav-item a:hover {
+      background-color: var(--rouge-france);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--bleu-france);
+      min-width: 250px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+
+    .nav-item:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: var(--rouge-france);
+    }
+
+    .hero {
+      height: 780px;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.5)),
+        url('https://www.lhorizonafricain.com/wp-content/uploads/2023/08/Le-cnef-dEtat-major-general-des-Forces-armees-congolaises-le-general-de-division-Charles-Richard-Mondjo.webp') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: var(--rouge-france);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: all .5s;
+      border: none;
+      cursor: pointer;
+    } 
+
+    .btn:hover {
+      background-color: var(--bleu-france);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+    }
+
+    .btn-outline:hover {
+        transform: scale(1.07);
+      background: rgb(237, 214, 214); 
+      color: var(--bleu-france);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      color: var(--bleu-france);
+      border-bottom: 2px solid var(--rouge-france);
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      color: var(--bleu-france);
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      background: var(--gris-fonce);
+      color: white;
+      padding: 50px 20px 20px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-section h3 {
+      color: var(--rouge-france);
+      border-bottom: 1px solid var(--rouge-france);
+      padding-bottom: 10px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+      color: var(--rouge-france);
+    }
+
+    .reseaux-sociaux {
+      text-align: center;
+      margin: 30px 0 0;
+    }
+
+    .reseaux-sociaux a {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .reseaux-sociaux img {
+      width: 40px;
+      height: 40px;
+      filter: grayscale(20%);
+      transition: 0.3s;
+    }
+
+    .reseaux-sociaux a:hover img {
+      filter: none;
+      transform: scale(1.15);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo {
+        justify-content: center;
+      }
+
+      .nav-list {
+        flex-direction: column;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Coat_of_arms_of_the_Republic_of_the_Congo.svg" alt="Armoiries Congo">
+        <div class="logo-text">
+          <h1>Ministère de la Défense Nationale</h1>
+          <p>République du Congo</p>
+          <div class="devise">Unité* Travail* Progrès</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#accueil" onclick="location.reload()">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a href="./le_ministère.html">Le Ministère</a>
+                <div class="dropdown-content">
+                    <a href="./discours_officiel.html">Discours officiels</a>
+                    <a href="./organigramme.html">Organigramme</a>
+                    <a href="./histoire_militaire.html">Histoire militaire</a>
+                    <a href="./missions.html">Missions</a>
+                    <a href="./organisations.html">Organisations</a>
+                    <a href="./budget_de_defense.html">Budget de défense</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="./forces_armees.html">Forces Armées</a>
+                <div class="dropdown-content">
+                    <a href="./forces_terrestres.html">Force Terrestre</a>
+                    <a href="./forces_tactiques.html">Force Tactique</a>
+                    <a href="./forces_aeriennes.html">Force Aérienne</a>
+                    <a href="./forces_navales.html">Force navale</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="./recrutement.html">Recrutement</a>
+                <div class="dropdown-content">
+                    <a href="https://www.adiac-congo.com/content/forces-armees-congolaises-le-personnel-administratif-en-formation-165379" target="_blank">Formations</a>
+                    <a href="https://www.emploi.cg/recrutement-defense" target="_blank">Postuler</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="./defense_et_securite.html">Défense et Sécurité</a>
+                <div class="dropdown-content">
+                    <a href="./cybersecurite.html">Cybersécurité</a>
+                    <a href="./renseignement.html">Renseignement</a>
+                    <a href="./protection_civile.html">Protection civile</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="./actualité.html">Actualités</a>
+                <div class="dropdown-content">
+                    <a href="./communiques.html">Communiqués</a>
+                    <a href="./operations.html">Opérations</a>
+                    <a href="./evenements.html">Événements</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#contact">Nous Contacter</a>
+                <div class="dropdown-content">
+                    <a href="https://www.instagram.com/ministere_de_la_defense_cg" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/goldenboy100" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/ministerearmee1" target="_blank">X</a>
+                    <a href="mailto:ministeredeladefensecongo@gmail.com">Email</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Défense et Sécurité Nationale</h2>
+            <p>
+                Là où naît le devoir de défendre la patrie, s’élève la voix du courage : celle du Ministère de la Défense du Congo, 
+                garant de notre souveraineté, de la paix et de la sécurité nationale.
+            </p>
+            <a href="./en_savoir_plus.html" class="btn btn-outline">En savoir plus</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Actualités et Dossiers</h2>
+        
+        <div class="cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://lasemaineafricaine.info/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-15-a-16.35.59.webp" />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Journée Nationale des Armées</h3>
+                    <p>Le Président de la République a présidé la traditionnelle cérémonie en hommage aux forces armées Congolaises.</p>
+                    <a href="./lire_suite_jn.html" class="btn">Lire la suite</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://topwar.ru/uploads/posts/2020-09/1600334472_1600334420.jpg" />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Modernisation des Armées</h3>
+                    <p>Découvrez les nouveaux équipements qui renforcent les capacités opérationnelles de nos forces armées.</p>
+                    <a href="./lire_suite_modernisation_armée.html" class="btn">Lire la suite</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i0.wp.com/ekolo242.cg/wp-content/uploads/2025/04/Concours-ENSOA-2025.png?fit=1920%2C1080&ssl=1" />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Campagne de Recrutement 2024</h3>
+                    <p>Rejoignez les forces armées Congolaises et engagez-vous au service de la Nation. Inscriptions ouvertes.</p>
+                    <a href="./lire_la_suite_recrutement.html" class="btn" target="_blank">Lire la suite</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Le Ministère</h3>
+                <ul>
+                    <li><a href="./organisations.html">Organisation</a></li>
+                    <li><a href="./histoire_militaire.html">Histoire militaire</a></li>
+                    <li><a href="./missions.html">Missions</a></li>
+                    <li><a href="./organigramme.html">Organigramme</a></li>
+                    <li><a href="./discours_officiel.html">Discours Officiels</a></li>
+                    <li><a href="./budget_de_defense.html">Budget de défense</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Forces Armées</h3>
+                <ul>
+                    <li><a href="./forces_terrestres.html">Force Terrestre</a></li>
+                    <li><a href="./forces_navales.html">Force Navale </a></li>
+                    <li><a href="./forces_aeriennes.html">Force Aérienne</a></li>
+                    <li><a href="./forces_tactiques.html">Forces Tactique</a></li>
+                    <li><a href="./gendarmerie.html">Gendarmerie</a></li>
+                    <li><a href="./services_communs.html">Services Communs</a></li>
+                    <li><a href="./polices.html">Polices</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <ul>
+                    <li><a href="./publication.html">Publications</a></li>
+                    <li><a href="./multimedia.html">Multimédia</a></li>
+                    <li><a href="./bibliotheque.html">Bibliothèque</a></li>
+                    <li><a href="./archives.html">Archives</a></li>
+                    <li><a href="./open_data.html">Open Data</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Nous Contacter</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/ministere_de_la_defense_cg" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/goldenboy100" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/ministerearmee1" target="_blank">X</a></li>
+                    <li><a href="mailto:ministeredeladefensecongo@gmail.com">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="reseaux-sociaux">
+        <a href="https://www.instagram.com/ministere_de_la_defense_cg" target="_blank">
+            <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/ministerearmee1" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/X_logo.jpg/1200px-X_logo.jpg" alt="X (Twitter)">
+        </a>
+        <a href="https://www.facebook.com/goldenboy100" target="_blank">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v4/yK/r/BHkEd6znUYJ.png" alt="Facebook">
+        </a>
+        <a href="mailto:ministeredeladefensecongo@gmail.com">
+            <img src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png" alt="Email">
+        </a>
+    </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Ministère de la Défense Nationale - République du Congo. Tous droits réservés.</p> 
+            
+        </div>
+    </footer>
+</body>
+</html>

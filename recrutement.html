@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recrutement - Ministère de la Défense</title>
+  <style>
+    :root {
+      --vert: #009e49;
+      --jaune: #ffcd00;
+      --rouge: #d62828;
+      --noir: #222;
+      --gris: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #fdfdfd, var(--gris));
+      color: var(--noir);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--vert), var(--jaune), var(--rouge));
+      text-align: center;
+      padding: 80px 20px 60px;
+      color: white;
+      position: relative;
+    }
+
+    .logo {
+      width: 100px;
+      background: white;
+      border-radius: 50%;
+      padding: 10px;
+      margin-bottom: 20px;
+      animation: fadeInScale 1.5s ease;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 3em;
+      animation: slideInTop 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      animation: slideInBottom 1.5s ease-in-out;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 25px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transform: translateY(30px);
+      opacity: 0;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .section:nth-child(1) { animation-delay: 0.2s; }
+    .section:nth-child(2) { animation-delay: 0.4s; }
+    .section:nth-child(3) { animation-delay: 0.6s; }
+    .section:nth-child(4) { animation-delay: 0.8s; }
+    .section:nth-child(5) { animation-delay: 1s; }
+
+    .section h2 {
+      color: var(--rouge);
+      margin-bottom: 15px;
+      font-size: 1.7em;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.8em;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      margin: 60px 0 30px;
+    }
+
+    .btn-retour {
+      background: var(--jaune);
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1em;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .btn-retour:hover {
+      background: #ffe84d;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideInTop {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInBottom {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .section {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Coat_of_arms_of_the_Republic_of_the_Congo.svg" alt="Logo République du Congo" class="logo">
+    <h1>Recrutement Militaire</h1>
+    <p>Ministère de la Défense - République du Congo</p>
+  </header>
+
+  <main>
+    <div class="section">
+      <h2>1. Annonce Officielle</h2>
+      <p>Le ministère publie chaque année un communiqué à travers la radio nationale, les journaux, les préfectures militaires et les réseaux sociaux officiels. Ce message précise les critères d’éligibilité, les dates et les lieux de dépôts.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Constitution du dossier</h2>
+      <p>Chaque candidat doit rassembler un ensemble de documents : copie de la carte d’identité, acte de naissance, certificat médical, casier judiciaire vierge, diplôme ou attestation d’études, et photos d’identité récentes.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. Épreuves de présélection</h2>
+      <p>Les postulants subissent des tests physiques (course, pompes, tractions), un entretien de motivation, ainsi qu’une évaluation médicale approfondie pour garantir leur aptitude au service militaire.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Formation initiale</h2>
+      <p>Les recrues retenues sont intégrées dans des centres d'instruction. Elles y reçoivent une formation militaire de base : discipline, maniement d'armes, tactique de terrain, valeurs républicaines et condition physique.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Intégration dans les forces</h2>
+      <p>À la fin de la formation, les soldats sont affectés aux unités selon leur spécialisation : infanterie, génie militaire, transmissions, logistique, santé militaire, etc. Leur engagement initial dure en général entre 2 et 5 ans.</p>
+    </div>
+  </main>
+
+  <footer>
+    <a href="index.html" class="btn-retour">← Retour à la première page</a>
+  </footer>
+
+</body>
+</html>

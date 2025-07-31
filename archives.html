@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archives - Ministère de la Défense</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #009e49, #ffcd00, #d62828);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .logo {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 1.4em;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .archive-card {
+      background: white;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .archive-img {
+      width: 100%;
+      max-width: 300px;
+      object-fit: cover;
+    }
+
+    .text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .text h3 {
+      color: #d62828;
+      margin-top: 0;
+    }
+
+    .text p {
+      font-size: 1em;
+      line-height: 1.5em;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .btn-retour {
+      background-color: #ffcd00;
+      padding: 12px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .btn-retour:hover {
+      transform: scale(1.05);
+      background-color: #ffe44d;
+    }
+
+    @media (max-width: 768px) {
+      .archive-card {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .archive-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .text {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://www.ambassadecongocanada.org/images/armoiries-congo.jpg" alt="Logo Congo" class="logo">
+    <h1>Ministère de la Défense</h1>
+    <h2>Archives Militaires Officielles</h2>
+  </header>
+
+  <section class="content">
+
+    <article class="archive-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStd9OhrHHQXuYknjWOiebDBu7hPQOxbuAGHA&s" alt="Documents anciens" class="archive-img">
+      <div class="text">
+        <h3>Fonds historiques classifiés</h3>
+        <p>
+          Conservés à la Direction des archives militaires, ces fonds regroupent les dossiers stratégiques, 
+          télégrammes confidentiels, notes d'opérations, et rapports d’état-major datant des années post-indépendance 
+          jusqu’à aujourd’hui. L’accès est strictement contrôlé.
+        </p>
+      </div>
+    </article>
+
+    <article class="archive-card">
+      <img src="https://congo-liberty.org/wp-content/uploads/2020/02/okoi.jpg" alt="Rapports militaires" class="archive-img">
+      <div class="text">
+        <h3>Rapports de missions</h3>
+        <p>
+          Chaque opération menée par les forces armées est documentée et archivée : comptes-rendus de terrain, 
+          bilans humains et matériels, évaluations tactiques et recommandations. Ces documents servent à l’enseignement militaire.
+        </p>
+      </div>
+    </article>
+
+    <article class="archive-card">
+      <img src="https://lesechos-congobrazza.com/images/ACCAPRESS.jpg" alt="Cartes militaires" class="archive-img">
+      <div class="text">
+        <h3>Cartes et journaux de marche</h3>
+        <p>
+          Les archives comprennent des centaines de cartes topographiques annotées, des carnets de guerre, 
+          des journaux de marche de bataillons et des schémas de déploiement datant de toutes les campagnes majeures.
+        </p>
+      </div>
+    </article>
+
+    <article class="archive-card">
+      <img src="https://www.adiac-congo.com/sites/default/files/eric_1_fileminimizer.jpg" alt="Numérisation" class="archive-img">
+      <div class="text">
+        <h3>Projet de numérisation des archives</h3>
+        <p>
+          En partenariat avec les Archives Nationales, le ministère mène un vaste chantier de numérisation 
+          afin de préserver les documents sensibles et faciliter leur consultation par les chercheurs accrédités.
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <footer>
+    <a href="index.html" class="btn-retour">← Retour à la première page</a>
+  </footer>
+
+</body>
+</html>

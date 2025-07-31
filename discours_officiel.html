@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Discours Officiel - République du Congo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+    :root {
+      --vert-congo: #2B4C3F;
+      --or-congo: #C8B560;
+      --beige-fond: #F9F8F3;
+      --texte-noir: #1F1F1F;
+      --rouge-congo: #D72638;
+      --jaune-congo: #FFD700;
+      --vert-bande: #007A3D;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--beige-fond);
+      font-family: 'Roboto', sans-serif;
+      color: var(--texte-noir);
+      line-height: 1.7;
+      position: relative;
+    }
+
+    .btn-retour {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: transparent;
+      border: 2px solid var(--vert-congo);
+      color: var(--vert-congo);
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .btn-retour:hover {
+      background-color: var(--vert-congo);
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .bande-gauche {
+      width: 8px;
+      background: linear-gradient(to bottom, var(--vert-bande) 33%, var(--jaune-congo) 33% 66%, var(--rouge-congo) 66%);
+    }
+
+    .content {
+      flex: 1;
+      padding: 60px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .discours-box {
+      background-color: white;
+      max-width: 800px;
+      padding: 40px 50px;
+      border-left: 8px solid var(--or-congo);
+      border-radius: 8px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    .image-header {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      color: var(--vert-congo);
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--or-congo);
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+      color: var(--or-congo);
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    strong {
+      color: var(--vert-congo);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .discours-box {
+        padding: 30px 25px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+
+      .bande-gauche {
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(to right, var(--vert-bande) 33%, var(--jaune-congo) 33% 66%, var(--rouge-congo) 66%);
+      }
+
+      .btn-retour {
+        top: 10px;
+        left: 10px;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="./index.html" class="btn-retour">← Retour</a>
+
+  <div class="container">
+    <div class="bande-gauche"></div>
+
+    <div class="content">
+      <div class="discours-box">
+        <img src="https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1215,fit=cover/https://prod.cdn-medias.jeuneafrique.com/medias/2019/09/30/sipa_ap22383311_000175.jpg" alt="Discours militaire officiel" class="image-header">
+
+        <h1>Discours Officiel</h1>
+        <h2>République du Congo – Ministère de la Défense</h2>
+
+        <p>Peuple congolais, forces de défense et de sécurité, chers compatriotes,</p>
+
+        <p>
+          En ce jour solennel, nous réaffirmons l’engagement indéfectible de notre armée à défendre la souveraineté, la paix et la dignité de la République du Congo.
+          Nos soldats, hommes et femmes de courage, incarnent les valeurs profondes de notre nation.
+        </p>
+
+        <p>
+          <strong>La défense nationale ne se limite pas à la force armée</strong> : elle s’étend à la conscience collective,
+          à l’éducation patriotique, et à la vigilance de chaque citoyen.
+        </p>
+
+        <p>
+          Ensemble, nous faisons face aux menaces, nous bâtissons une armée moderne, équipée, disciplinée, et profondément républicaine.
+        </p>
+
+        <p>
+          À notre jeunesse : engagez-vous. À notre peuple : unissez-vous. Car le Congo est fort quand ses enfants marchent d’un même pas.
+        </p>
+
+        <p>
+          <strong>Que vive l’Armée congolaise ! Que vive la République ! Que vive le Congo uni et souverain !</strong>
+        </p>
+
+        <footer>
+          &copy; 2025 Ministère de la Défense - République du Congo. Tous droits réservés.
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

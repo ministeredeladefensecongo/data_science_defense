@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Police Nationale du Congo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: #1c1c1c;
+      line-height: 1.7;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      background-image: url('https://img.gta5-mods.com/q75/images/san-francisco-police-department/7d7bc0-GTA5%202015-10-11%2009-10-27-27.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header .content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #0055a5;
+      display: block;
+      margin-top: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 20px;
+    }
+
+    .card .content h3 {
+      margin-bottom: 10px;
+      color: #0055a5;
+    }
+
+    .newsletter {
+      background: #0055a5;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .newsletter input {
+      padding: 12px;
+      width: 250px;
+      border-radius: 6px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .newsletter button {
+      padding: 12px 20px;
+      background: white;
+      color: #0055a5;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .newsletter button:hover {
+      background: #f2f2f2;
+    }
+
+    footer {
+      padding: 40px 20px;
+      background: #1c1c1c;
+      color: white;
+      text-align: center;
+    }
+
+    .return-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #0055a5;
+      color: white;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .return-button:hover {
+      background: #003f7f;
+      transform: scale(1.05);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .newsletter button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="content fade-in">
+      <h1 class="fade-in">Police Nationale du Congo</h1>
+      <p class="fade-in">Protection, Sécurité, Engagement pour la République du Congo (Brazzaville).</p>
+    </div>
+  </header>
+
+  <section class="section fade-in">
+    <h2 class="fade-in">À propos de la Police Nationale</h2>
+    <p class="fade-in">
+      La Police Nationale du Congo (Brazzaville) joue un rôle central dans le maintien de l’ordre public,
+      la lutte contre la criminalité, la prévention des infractions, la protection des citoyens et de leurs biens.
+      Elle opère à travers tout le territoire congolais, avec des unités spécialisées dans la sécurité routière,
+      l'investigation, le maintien de l'ordre et la protection rapprochée.
+    </p>
+    <p class="fade-in">
+      Créée pour assurer la paix dans les milieux urbains et ruraux, la Police Nationale se caractérise par sa rigueur,
+      son engagement républicain et son adaptation constante aux nouveaux défis sécuritaires, notamment le grand banditisme,
+      la cybercriminalité et le terrorisme transfrontalier.
+    </p>
+  </section>
+
+  <section class="section fade-in">
+    <h2 class="fade-in">Missions principales</h2>
+    <div class="grid">
+      <div class="card fade-in">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_sf-tbZHZVQK8dIt3UfWAcQNTrDIRg1kuxQ&s" alt="Sécurité urbaine">
+        <div class="content">
+          <h3>Maintien de l'ordre</h3>
+          <p>
+            Encadrement des manifestations publiques, régulation du trafic, sécurisation des quartiers sensibles et des lieux stratégiques.
+          </p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://lesechos-congobrazza.com/images/2024B/COMMIT.jpg" alt="Investigation">
+        <div class="content">
+          <h3>Enquêtes & Investigations</h3>
+          <p>
+            Collecte de preuves, interrogatoires, lutte contre le crime organisé, vols, agressions, infractions économiques.
+          </p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://www.adiac-congo.com/sites/default/files/dsc_2833_fileminimizer.jpg" alt="Sécurité publique">
+        <div class="content">
+          <h3>Sensibilisation & Prévention</h3>
+          <p>
+            Campagnes d’éducation civique, prévention contre la drogue, sécurité scolaire, et protection des mineurs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-in">
+    <h2 class="fade-in">Unité d'élite et partenariats</h2>
+    <p class="fade-in">
+      La Police Nationale dispose de brigades d’intervention rapides, d’unités canines et anti-drogue.
+      Elle collabore avec INTERPOL, les polices d'autres pays africains et des institutions internationales pour renforcer ses capacités.
+    </p>
+    <p class="fade-in">
+      Ces coopérations ont permis des arrestations majeures, des formations spécialisées, et une meilleure coordination régionale
+      dans la lutte contre la criminalité transnationale.
+    </p>
+  </section>
+
+  <footer class="fade-in">
+    <p>© 2025 Police Nationale du Congo - Tous droits réservés</p>
+    <p style="font-size: 7px;"><strong><em>Ce site a été réalisé par Nathan GONCALVES et Exaucé Aymar</em></strong></p> 
+
+  </footer> 
+
+
+  <button class="return-button" onclick="window.location.href='index.html'">← Retour</button>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

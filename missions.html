@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Missions de l'Armée Congolaise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      position: relative;
+    }
+
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 45px;
+      height: 45px;
+      background: #C8B560;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      transition: transform 0.2s;
+    }
+
+    .back-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .back-btn svg {
+      fill: #fff;
+      width: 22px;
+      height: 22px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 60px 20px 10px;
+    }
+
+    .header h1 {
+      margin-bottom: 5px;
+      color: #2B4C3F;
+      font-size: 2.6rem;
+    }
+
+    .header p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .missions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .mission-card {
+      background: #fff;
+      width: 340px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .mission-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .mission-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .mission-content {
+      padding: 20px;
+    }
+
+    .mission-content h2 {
+      color: #0055A4;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .mission-content p {
+      font-size: 0.97rem;
+      text-align: justify;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .mission-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-btn" aria-label="Retour">
+    <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+  </a>
+
+  <div class="header">
+    <h1>Les Missions de l’Armée Congolaise</h1>
+    <p>Défendre, protéger, servir et construire pour la nation</p>
+  </div>
+
+  <div class="missions">
+    
+    <div class="mission-card">
+      <img src="https://www.adiac-congo.com/sites/default/files/dsc_4900_fileminimizer.jpg" alt="Défense nationale">
+      <div class="mission-content">
+        <h2>Défense de la souveraineté</h2>
+        <p>
+          L’armée congolaise veille à la défense du territoire contre toute agression extérieure. Elle surveille les frontières terrestres, fluviales et aériennes pour assurer l’intégrité nationale et la sécurité des citoyens. Elle est le rempart de la République, garante de la souveraineté et de la stabilité.
+        </p>
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <img src="https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1215,fit=cover/https://prod.cdn-medias.jeuneafrique.com/medias/2016/05/02/dsn.jpg" alt="Soutien humanitaire">
+      <div class="mission-content">
+        <h2>Soutien aux populations</h2>
+        <p>
+          En période de crise (inondations, épidémies, incendies), les forces armées apportent une aide logistique, humanitaire et médicale. Leur présence rapide permet de sauver des vies, d’évacuer des populations et de distribuer vivres et médicaments.
+        </p>
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <img src="https://lanouvelletribune.info/wp-content/uploads/2024/11/drone-akinci-1170x658.webp" alt="Modernisation militaire">
+      <div class="mission-content">
+        <h2>Modernisation technologique</h2>
+        <p>
+          L'armée se dote d’outils numériques et technologiques modernes pour faire face aux menaces nouvelles : cybersécurité, surveillance, armement intelligent. La modernisation renforce l’efficacité des opérations et l’autonomie stratégique du Congo.
+        </p>
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <img src="https://monusco.unmissions.org/sites/default/files/field/image/3j2a5322.jpg" alt="Formation civique">
+      <div class="mission-content">
+        <h2>Formation et patriotisme</h2>
+        <p>
+          L’armée forme la jeunesse aux valeurs républicaines : discipline, respect, solidarité, rigueur. Elle joue un rôle crucial dans l’éducation civique et le développement personnel des jeunes recrues, pour une société plus forte et plus unie.
+        </p>
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <img src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/23-06-2021_MINUSCA_Bakouma.jpg/image1024x768.jpg" alt="Mission internationale">
+      <div class="mission-content">
+        <h2>Maintien de la paix</h2>
+        <p>
+          Les troupes congolaises participent à des opérations internationales sous mandat de l’ONU ou de l’Union africaine. Elles soutiennent la paix, la sécurité régionale et la diplomatie militaire, renforçant le rôle du Congo sur la scène mondiale.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Ministère de la Défense - République du Congo. Tous droits réservés.
+  </footer>
+
+</body>
+</html> le minisitère mission : plus6.html

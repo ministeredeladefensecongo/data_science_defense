@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Force Terrestre - Ministère des Armées</title>
+  <style>
+
+
+    @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+    :root {
+      --primary: #224229;
+      --accent: #85b394;
+      --text: #222;
+      --bg: #f8f9f8;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      background-color: var(--accent);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    header a:hover {
+      background-color: #6d997a;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    main h2 {
+      color: var(--primary);
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      background-color: var(--white);
+      padding: 25px;
+      border-left: 6px solid var(--accent);
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    section {
+      background-color: var(--white);
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    section h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    } 
+
+    .gallery img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Force Terrestre</h1>
+    <a href="./index.html">&#8592; Retour à l'accueil</a>
+  </header>
+
+  <main>
+    <h2>Les Forces Terrestres Congolaises</h2>
+    <div class="intro">
+      La Force Terrestre est le pilier historique de la défense nationale. En charge de la protection du territoire au sol, elle regroupe des unités d'infanterie, de blindés, de génie militaire et de logistique. Son engagement est essentiel à la stabilité du pays et à la lutte contre les groupes armés.
+    </div>
+
+    <div class="gallery">
+      <img src="https://i.pinimg.com/736x/be/77/fd/be77fd7667ff23574ef17969d6817e92.jpg" alt="Infanterie en action">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/M1_Abrams_at_Ft._Bliss_2019.jpg/1024px-M1_Abrams_at_Ft._Bliss_2019.jpg" alt="Exercice de terrain">
+      <img src="https://media.defense.gov/2023/Feb/28/2003169645/-1/-1/0/230222-F-DN254-1007.JPG" alt="Troupes en déploiement">
+    </div>
+
+    <section>
+      <h3>Organisation</h3>
+      <p>
+        La Force Terrestre est composée de brigades régionales, de bataillons de réaction rapide et d'unités spécialisées dans le renseignement, le soutien médical et l'artillerie. Chaque unité opère selon une chaîne de commandement rigoureuse et efficace.
+      </p>
+    </section>
+
+    <section>
+      <h3>Matériels et blindés</h3>
+      <p>
+        Les Forces terrestres disposent d'un arsenal varié : véhicules blindés tout-terrain, chars légers, systèmes de missiles sol-sol, radars portatifs, etc. Ce matériel est essentiel pour opérer sur des terrains complexes et assurer une supériorité tactique.
+      </p>
+    </section>
+
+    <section>
+      <h3>Missions récentes</h3>
+      <p>
+        En 2025, la Force Terrestre a mené plusieurs opérations dans l'Est du pays contre des factions armées, permettant la sécurisation de zones minières et la réinstallation de milliers de civils. Des partenariats avec des forces internationales renforcent leur capacité de projection.
+      </p>
+    </section>
+  </main>
+
+ <footer style="background-color: transparent; color: #333333; text-align: center; padding: 20px; font-size: 0.95rem; font-family: 'Roboto', sans-serif;">
+  © 2025 Ministère des Armées - Force Tactique Congolaise 
+</footer>
+
+</body>
+</html>

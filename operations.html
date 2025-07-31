@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Opérations Militaires - Défense du Congo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #007a3d, #ffcd00, #d62828);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .operation {
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .operation:hover {
+      transform: translateY(-5px);
+    }
+
+    .operation img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      object-fit: cover;
+      flex: 1 1 40%;
+    }
+
+    .operation-content {
+      flex: 1 1 60%;
+      padding: 30px;
+    }
+
+    .operation-content h2 {
+      color: #007a3d;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    .operation-content p {
+      font-size: 1em;
+      color: #333;
+    }
+
+    .retour {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .retour a {
+      background: #d62828;
+      color: white;
+      padding: 14px 30px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+
+    .retour a:hover {
+      background-color: #aa1f1f;
+    }
+
+    footer {
+      text-align: center;
+      background: #003300;
+      color: #ccc;
+      padding: 25px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .operation {
+        flex-direction: column;
+      }
+
+      .operation img,
+      .operation-content {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Opérations Stratégiques</h1>
+    <p>Ministère de la Défense – République du Congo</p>
+  </header>
+
+  <section>
+    <div class="operation">
+      <img src="https://lecongokitoko.wordpress.com/wp-content/uploads/2019/02/11984707395_0e4c1bde6c_b263470764656956426.jpg?w=558" alt="Opération Mayombe">
+      <div class="operation-content">
+        <h2>Opération Mayombe : Stabilisation des frontières ouest</h2>
+        <p>Lancée en mai 2025, l'opération Mayombe vise à démanteler les réseaux de contrebande et groupes armés actifs dans les forêts frontalières entre le Congo et l'Angola. Plus de 500 militaires ont été déployés avec le soutien de drones de surveillance. Des résultats positifs ont été enregistrés avec 37 arrestations et 4 caches d'armes découvertes.</p>
+      </div>
+    </div>
+
+    <div class="operation">
+      <img src="https://www.brazzavillefoundation.org/app/uploads/2022/12/Action-Bassin-Congo-ordi.jpg" alt="Sécurisation Bassin du Congo">
+      <div class="operation-content">
+        <h2>Mission Escale Verte : Protection du Bassin du Congo</h2>
+        <p>En partenariat avec les ministères de l’Environnement et de l’Intérieur, l’armée congolaise appuie des unités écologiques pour sécuriser les zones sensibles du bassin forestier. L’objectif est double : lutter contre l’exploitation illégale et protéger les villages riverains des agressions. Des patrouilles conjointes sont menées depuis Brazzaville jusqu’à Ouesso.</p>
+      </div>
+    </div>
+
+    <div class="operation">
+      <img src="https://c8.alamy.com/compfr/j2bkdp/la-distribution-de-l-hopital-de-brousse-confisques-pres-de-makoua-congo-j2bkdp.jpg" alt="Aide Humanitaire Makoua">
+      <div class="operation-content">
+        <h2>Urgence Makoua : Intervention humanitaire après crue</h2>
+        <p>Suite aux inondations dramatiques de mars 2025, les forces armées ont évacué près de 8 000 habitants sinistrés dans le district de Makoua. Hôpitaux de campagne, distribution de vivres, purification d’eau : l’intervention a permis une réponse rapide face à une catastrophe naturelle sans précédent dans la région.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="retour">
+    <a href="./index.html">⬅ Retour à la page principale</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Ministère de la Défense Nationale du Congo — Direction de la Communication
+  </footer>
+
+</body>
+</html>

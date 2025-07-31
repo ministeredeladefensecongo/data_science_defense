@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Force Tactique - Ministère des Armées</title>
+  <style>
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #00509e;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: floatUp 2s infinite ease-in-out;
+}
+
+header a:hover {
+  background-color: #3366cc;
+  transform: translateY(-2px);
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main h2 {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+section {
+  background-color: white;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+section h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+section p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+  margin-top: 60px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Force Tactique</h1>
+    <a href="./index.html">&#8592; Retour</a>
+  </header>
+
+  <main>
+    <h2>Unités Tactiques Spécialisées</h2>
+    <p class="intro">
+      La Force Tactique Congolaise est l'épine dorsale des opérations militaires spéciales. Elle agit en toute discrétion, précision et rapidité.
+      Spécialisée dans la lutte anti-terroriste, la libération d'otages, et les infiltrations derrière les lignes ennemies, cette unité élite garantit la stabilité
+      nationale dans les situations les plus critiques.
+    </p>
+
+    <div class="gallery">
+      <img src="https://image.tmdb.org/t/p/original/6aqVoa9T2lGdM1uQseKxJvdHA6g.jpg" alt="Opération tactique">
+      <img src="https://cdn1.img.sputniknews.africa/img/101747/65/1017476502_201:0:822:683_1920x0_80_0_0_cb5bd91a2f6788d23610f5a467d5dc02.jpg" alt="Exercice militaire">
+      <img src="https://i.dailymail.co.uk/i/pix/2017/10/17/06/45692E3100000578-0-image-a-6_1508219705259.jpg" alt="Soldats tactiques">
+    </div>
+
+    <section>
+      <h3>Formation et Entraînement</h3>
+      <p>
+        Les membres de la Force Tactique suivent un entraînement intensif basé sur les standards internationaux. Entraînement en milieux hostiles,
+        maniement des armes spéciales, techniques de survie, pilotage de drones, et coordination en milieu urbain font partie des compétences développées.
+      </p>
+    </section>
+
+    <section>
+      <h3>Matériel de Pointe</h3>
+      <p>
+        Equipés des technologies les plus modernes, les soldats tactiques utilisent des gilets intelligents, des casques de communication cryptée,
+        des lunettes de vision nocturne, et des véhicules blindés rapides pour intervenir de jour comme de nuit.
+      </p>
+    </section>
+
+    <section>
+      <h3>Opérations Célèbres</h3>
+      <p>
+        Parmi les missions les plus notables, on compte l'opération "Cobra" en 2023 qui a permis la capture de plusieurs chefs rebelles dans la région du Nord-Kivu,
+        et l'intervention rapide à Kinshasa pour neutraliser un réseau de trafic d'armes.
+      </p>
+    </section>
+  </main>
+
+  <footer style="background-color: transparent; color: #333333; text-align: center; padding: 20px; font-size: 0.95rem; font-family: 'Roboto', sans-serif;">
+  © 2025 Ministère des Armées - Force Tactique Congolaise 
+</footer>
+</body>
+</html>

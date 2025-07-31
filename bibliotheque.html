@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bibliothèques - Ministère de la Défense</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #009e49, #ffcd00, #d62828);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .logo {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 1.4em;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .library-card {
+      background: white;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .library-img {
+      width: 100%;
+      max-width: 300px;
+      object-fit: cover;
+    }
+
+    .text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .text h3 {
+      color: #d62828;
+      margin-top: 0;
+    }
+
+    .text p {
+      font-size: 1em;
+      line-height: 1.5em;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .btn-retour {
+      background-color: #ffcd00;
+      padding: 12px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .btn-retour:hover {
+      transform: scale(1.05);
+      background-color: #ffe44d;
+    }
+
+    @media (max-width: 768px) {
+      .library-card {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .library-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .text {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Coat_of_arms_of_the_Republic_of_the_Congo.svg" alt="Logo Congo" class="logo">
+    <h1>Ministère de la Défense</h1>
+    <h2>Ressources des Bibliothèques Militaires</h2>
+  </header>
+
+  <section class="content">
+
+    <article class="library-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgDu1AAlaXoVdfmzjYkN0jWtiFX6UG0KkzcA&s" alt="Bibliothèque centrale" class="library-img">
+      <div class="text">
+        <h3>Bibliothèque Centrale Militaire</h3>
+        <p>
+          Située à Brazzaville, cette bibliothèque rassemble les documents stratégiques, les manuels de formation des écoles militaires, 
+          les ouvrages de doctrine, les publications historiques et les archives officielles de l’armée congolaise.
+        </p>
+      </div>
+    </article>
+
+    <article class="library-card">
+      <img src="https://www.congobrazzaville.campusfrance.org/sites/pays/files/congobrazzaville/styles/mobile_rte_large/public/medias/images/2021-09/107391049_3172441902802629_9212343604584712680_n.jpg?itok=R8McsLY3" alt="Salle de lecture" class="library-img">
+      <div class="text">
+        <h3>Espaces de Lecture et d'Étude</h3>
+        <p>
+          Des espaces modernes sont aménagés dans les académies militaires pour permettre aux élèves-officiers, 
+          sous-officiers et chercheurs d’accéder à des ressources spécialisées : géopolitique, droit international humanitaire, 
+          cyberdéfense, stratégie et sciences sociales.
+        </p>
+      </div>
+    </article>
+
+    <article class="library-card">
+      <img src="https://www.adiac-congo.com/sites/default/files/20140304-bok030-1de1.jpeg.jpg" alt="Archives militaires" class="library-img">
+      <div class="text">
+        <h3>Archives Historiques de la Défense</h3>
+        <p>
+          Les bibliothèques du ministère conservent les récits de campagne, les rapports de missions, les cartes historiques 
+          et les témoignages des anciens combattants. Elles contribuent à la préservation de la mémoire militaire congolaise.
+        </p>
+      </div>
+    </article>
+
+    <article class="library-card">
+      <img src="https://institutfrancais-congo.com/wp-content/uploads/2025/01/ESPACE-ADULTES_BZV_7-scaled.jpg" alt="Bibliothèque numérique" class="library-img">
+      <div class="text">
+        <h3>Bibliothèque Numérique Défense</h3>
+        <p>
+          Accessible aux personnels autorisés, cette plateforme propose des documents numérisés, des thèses militaires, 
+          des analyses tactiques et des bulletins sécurisés pour suivre l'évolution des doctrines et innovations en matière de défense.
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <footer>
+    <a href="index.html" class="btn-retour">← Retour à la première page</a>
+  </footer>
+
+</body>
+</html>

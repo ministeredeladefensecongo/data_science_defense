@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Événements - Ministère de la Défense du Congo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #007a3d, #ffcd00, #d62828);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 { font-size: 3em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; }
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .event {
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .event:hover { transform: translateY(-5px); }
+    .event img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      object-fit: cover;
+      flex: 1 1 40%;
+    }
+    .small-image {
+      max-height: 260px;
+      object-fit: cover;
+    }
+    .event-content {
+      flex: 1 1 60%;
+      padding: 30px;
+    }
+    .event-content h2 {
+      color: #007a3d;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+    .event-content p {
+      font-size: 1em;
+      color: #333;
+    }
+    .retour {
+      text-align: center;
+      margin: 50px 0;
+    }
+    .retour a {
+      background: #d62828;
+      color: white;
+      padding: 14px 30px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+    .retour a:hover {
+      background-color: #aa1f1f;
+    }
+    footer {
+      text-align: center;
+      background: #003300;
+      color: #ccc;
+      padding: 25px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .event { flex-direction: column; }
+      .event img, .event-content { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Événements Officiels</h1>
+    <p>Ministère de la Défense – République du Congo</p>
+  </header>
+
+  <section>
+    <div class="event">
+      <img src="https://lesechos-congobrazza.com/images/2024/A-A-A-A-A-A-A-A-A-A-A-A-ACT-DGFE-DEFILE-13.jpg" alt="Cérémonie nationale">
+      <div class="event-content">
+        <h2>Cérémonie d’hommage aux anciens combattants</h2>
+        <p>Le 15 juin 2025, une cérémonie solennelle s’est tenue à Brazzaville pour rendre hommage aux anciens combattants de l’armée congolaise. Le président et le ministre de la défense étaient présents pour honorer leur bravoure et leur dévouement à la nation.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <img class="small-image" src="https://lasemaineafricaine.info/wp-content/uploads/2024/06/Les-officiels-pendant-la-visite-du-projet-1.webp" alt="Forum de la sécurité">
+      <div class="event-content">
+        <h2>Forum national sur la sécurité intérieure</h2>
+        <p>Du 4 au 6 avril 2025, des experts civils et militaires se sont réunis pour débattre des enjeux sécuritaires du pays. Le forum a mis en lumière la nécessité de renforcer la cybersécurité et la formation des forces nationales.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <img src="https://media-files.abidjan.net/photo/ceremonie-d-ouverture-de-lexercice-militaire-multinational-americain-flintl_a9p3gxsxsqo.jpg" alt="Manœuvres militaires">
+      <div class="event-content">
+        <h2>Exercice interarmées "Congo Fort 2025"</h2>
+        <p>Les forces terrestres, aériennes et marines du Congo ont participé à un exercice stratégique majeur dans la région de Sibiti. Cet entraînement visait à améliorer la coordination interarmées en situation de crise réelle.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="retour">
+    <a href="./index.html">⬅ Retour à la page principale</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Ministère de la Défense Nationale du Congo — Événements officiels
+  </footer>
+
+</body>
+</html>

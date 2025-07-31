@@ -1,0 +1,158 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Organisation de l'Armée Congolaise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f9;
+      color: #1f1f1f;
+    }
+
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 45px;
+      height: 45px;
+      background: #2B4C3F;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    .back-btn svg {
+      fill: #fff;
+      width: 22px;
+      height: 22px;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(to right, #2B4C3F, #C8B560);
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      width: 300px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      color: #2B4C3F;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="back-btn" aria-label="Retour">
+  <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+</a>
+
+<header>
+  <h1>Organisation de l'Armée Congolaise</h1>
+  <p>Structure et composantes des Forces Armées de la République du Congo</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <img src="https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1215,fit=cover/https://prod.cdn-medias.jeuneafrique.com/medias/2019/09/30/sipa_ap22383311_000175.jpg" alt="Chef Suprême des Armées">
+    <h2>Commandement Suprême</h2>
+    <p>Le Président de la République est le chef suprême des Forces armées. Il définit les orientations stratégiques de la défense nationale et veille à la sécurité du territoire.</p>
+  </div>
+  <div class="card">
+    <img src="https://i0.wp.com/gouvernement.cg/wp-content/uploads/2022/07/7-1.png?resize=400%2C400&ssl=1" alt="Ministère de la Défense">
+    <h2>Ministère de la Défense</h2>
+    <p>Il met en œuvre la politique de défense définie par le gouvernement, en coordonnant les actions des différentes forces armées et en supervisant les opérations militaires.</p>
+  </div>
+  <div class="card">
+    <img src="https://www.aci.cg/wp-content/uploads/2024/01/IMG-20240102-WA0023-1024x683.jpg" alt="Etat-major">
+    <h2>État-Major Général</h2>
+    <p>Organe de planification et de coordination opérationnelle, dirigé par un chef d'état-major général qui assure la préparation, la logistique et la stratégie des forces armées.</p>
+  </div>
+  <div class="card">
+    <img src="https://www.defense.gouv.fr/sites/default/files/styles/16_9_md/public/operations/20230413_152503.jpg?itok=Y8uE4erW" alt="Armée de Terre">
+    <h2>Armée de Terre</h2>
+    <p>Assure la sécurité terrestre du pays. Elle est composée d'unités d'infanterie, de blindés, et d'artillerie, et est déployée dans les régions sensibles du territoire.</p>
+  </div>
+  <div class="card">
+    <img src="https://s.rfi.fr/media/display/760a29c8-117c-11ea-80f8-005056bf7c53/w:980/p:16x9/defense-patrouilleursIMG_2865_0.JPG" alt="Marine Nationale">
+    <h2>Marine Nationale</h2>
+    <p>Protège les zones maritimes et fluviales, lutte contre la piraterie et soutient les missions humanitaires dans les régions à accès difficile.</p>
+  </div>
+  <div class="card">
+    <img src="https://afridesk.org/wp-content/uploads/2023/03/avion-de-chasse-chinois.jpeg" alt="Force Aérienne">
+    <h2>Force Aérienne</h2>
+    <p>Elle assure les missions de reconnaissance, de transport militaire, d'appui aérien, et participe aux opérations de secours d'urgence en coordination avec les autres corps.</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Ministère de la Défense - République du Congo. Tous droits réservés.
+</footer>
+
+</body>
+</html>

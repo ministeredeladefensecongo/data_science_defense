@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actualités - Ministère de la Défense</title>
+  <style>
+    :root {
+      --vert: #009e49;
+      --jaune: #ffcd00;
+      --rouge: #d62828;
+      --gris: #f5f5f5;
+      --noir: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--gris);
+      color: var(--noir);
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--vert), var(--jaune), var(--rouge));
+      color: white;
+      padding: 40px 20px 100px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+      animation: slideInDown 1.2s ease-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      animation: slideInDown 1.5s ease-out;
+    }
+
+    header h2 {
+      margin: 10px 0 0;
+      font-weight: 400;
+      font-size: 1.4em;
+      animation: fadeIn 2s ease-in;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: white;
+      border-top-left-radius: 100% 80px;
+      border-top-right-radius: 100% 80px;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 100px auto 60px;
+      padding: 0 30px;
+    }
+
+    .bloc {
+      background: white;
+      border-left: 6px solid var(--rouge);
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      position: relative;
+      animation: fadeUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .bloc:nth-child(1) { animation-delay: 0.2s; }
+    .bloc:nth-child(2) { animation-delay: 0.4s; }
+    .bloc:nth-child(3) { animation-delay: 0.6s; }
+    .bloc:nth-child(4) { animation-delay: 0.8s; }
+
+    .bloc h3 {
+      margin-top: 0;
+      color: var(--rouge);
+      font-size: 1.4em;
+    }
+
+    .bloc p {
+      line-height: 1.6;
+      font-size: 1em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin: 60px 0 30px;
+    }
+
+    .btn-retour {
+      background-color: var(--jaune);
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .btn-retour:hover {
+      background-color: #fff06a;
+      transform: scale(1.05);
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 700px) {
+      header h1 { font-size: 2em; }
+      .section { padding: 0 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Coat_of_arms_of_the_Republic_of_the_Congo.svg" alt="Logo Congo" class="logo">
+    <h1>Ministère de la Défense</h1>
+    <h2>Actualité Générale 2024-2025</h2>
+  </header>
+
+  <section class="section">
+
+    <div class="bloc">
+      <h3>Renforcement du dispositif de sécurité nationale</h3>
+      <p>
+        Le Ministère de la Défense a lancé en 2024 un nouveau plan de renforcement des zones sensibles frontalières. 
+        Plus de 1 200 militaires supplémentaires ont été déployés dans les régions de l’Est pour assurer une stabilité durable.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>Rapport stratégique semestriel publié</h3>
+      <p>
+        Le rapport stratégique de juin 2025 fait état de progrès notables dans la formation des troupes, la cybersécurité, 
+        et la coopération interarmée. Le ministère y réaffirme sa volonté de moderniser ses forces dans le respect de la souveraineté nationale.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>Partenariats internationaux actifs</h3>
+      <p>
+        Plusieurs accords bilatéraux ont été renouvelés avec des partenaires africains et européens afin de renforcer 
+        les capacités logistiques, la lutte antiterroriste et le partage d'expertise stratégique.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>Prochain grand exercice interarmées prévu en août</h3>
+      <p>
+        Le ministère prévoit un exercice militaire d’envergure au nord du pays en août 2025. L’objectif : tester la coordination 
+        entre les unités terrestres, aériennes et logistiques en conditions opérationnelles réelles.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <a href="index.html" class="btn-retour">← Retour à la première page</a>
+  </footer>
+
+</body>
+</html>

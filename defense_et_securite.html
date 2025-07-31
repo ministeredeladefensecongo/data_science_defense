@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Défense & Sécurité - Ministère de la Défense</title>
+  <style>
+    :root {
+      --vert-congo: #009e49;
+      --jaune-congo: #ffcd00;
+      --rouge-congo: #d62828;
+      --gris-clair: #f4f4f4;
+      --ombre: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--gris-clair);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--vert-congo), var(--jaune-congo), var(--rouge-congo));
+      padding: 40px 20px 100px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header img.logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    header h2 {
+      font-weight: 400;
+      font-size: 1.5em;
+      margin-top: 10px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: white;
+      border-top-left-radius: 100% 80px;
+      border-top-right-radius: 100% 80px;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 100px auto;
+      padding: 0 30px;
+    }
+
+    .bloc {
+      background: white;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-radius: 15px;
+      border-left: 6px solid var(--rouge-congo);
+      box-shadow: 0 10px 20px var(--ombre);
+      animation: fadeUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .bloc:nth-child(1) { animation-delay: 0.2s; }
+    .bloc:nth-child(2) { animation-delay: 0.4s; }
+    .bloc:nth-child(3) { animation-delay: 0.6s; }
+    .bloc:nth-child(4) { animation-delay: 0.8s; }
+
+    .bloc h3 {
+      margin-top: 0;
+      color: var(--rouge-congo);
+      font-size: 1.5em;
+    }
+
+    .bloc p {
+      font-size: 1em;
+      line-height: 1.6em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin: 60px 0 30px;
+    }
+
+    .btn-retour {
+      background-color: var(--jaune-congo);
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .btn-retour:hover {
+      background-color: #ffe84d;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 700px) {
+      header h1 { font-size: 2em; }
+      .section { padding: 0 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Coat_of_arms_of_the_Republic_of_the_Congo.svg" alt="Logo République du Congo" class="logo" />
+    <h1>Ministère de la Défense</h1>
+    <h2>Défense & Sécurité Nationale</h2>
+  </header>
+
+  <section class="section">
+
+    <div class="bloc">
+      <h3>Mission globale</h3>
+      <p>
+        Le Ministère de la Défense de la République du Congo a pour mission principale d'assurer l'intégrité du territoire 
+        national, la souveraineté de l'État et la protection des populations contre toute menace intérieure ou extérieure.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>Sécurité intérieure & prévention</h3>
+      <p>
+        En coordination avec les forces de sécurité intérieure, la défense joue un rôle central dans la lutte contre 
+        le banditisme armé, la criminalité transfrontalière et la protection des infrastructures critiques du pays.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>Coopération & alliances régionales</h3>
+      <p>
+        Le Congo participe activement à des initiatives de sécurité régionale avec la CEEAC, l'Union Africaine et d'autres 
+        partenaires internationaux, afin de renforcer la stabilité sous-régionale et le partage d'information.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>Modernisation des forces</h3>
+      <p>
+        Une réforme progressive vise la modernisation des équipements, la professionnalisation des effectifs, 
+        la digitalisation des services de renseignement et l’intégration des jeunes dans les corps spécialisés 
+        tels que la cyberdéfense et la logistique militaire.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <a href="index.html" class="btn-retour">← Retour à la première page</a>
+  </footer>
+
+</body>
+</html>
